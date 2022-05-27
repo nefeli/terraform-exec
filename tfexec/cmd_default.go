@@ -23,8 +23,9 @@ func (tf *Terraform) runTerraformCmd(ctx context.Context, cmd *exec.Cmd) error {
 	// Read stdout / stderr logs from pipe instead of setting cmd.Stdout and
 	// cmd.Stderr because it can cause hanging when killing the command
 	// https://github.com/golang/go/issues/23019
-	stdoutWriter := mergeWriters(cmd.Stdout, tf.stdout)
-	stderrWriter := mergeWriters(tf.stderr, &errBuf)
+	sw := &syncWriter{w: &errBuf}
+	stdoutWriter := mergeWriters(cmd.Stdout, tf.stdout, sw)
+	stderrWriter := mergeWriters(tf.stderr, sw)
 
 	cmd.Stderr = nil
 	cmd.Stdout = nil
