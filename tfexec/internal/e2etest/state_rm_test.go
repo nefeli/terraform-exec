@@ -7,7 +7,7 @@ import (
 	"github.com/hashicorp/go-version"
 	tfjson "github.com/hashicorp/terraform-json"
 
-	"github.com/hashicorp/terraform-exec/tfexec"
+	"github.com/nefeli/terraform-exec/tfexec"
 )
 
 func TestStateRm(t *testing.T) {

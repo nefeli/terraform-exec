@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/go-version"
 
-	"github.com/hashicorp/terraform-exec/tfexec"
+	"github.com/nefeli/terraform-exec/tfexec"
 	tfjson "github.com/hashicorp/terraform-json"
 )
 

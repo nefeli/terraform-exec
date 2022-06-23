@@ -9,7 +9,7 @@ import (
 	tfjson "github.com/hashicorp/terraform-json"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform-exec/tfexec"
+	"github.com/nefeli/terraform-exec/tfexec"
 )
 
 var (

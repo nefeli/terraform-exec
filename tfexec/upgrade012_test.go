@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hashicorp/terraform-exec/tfexec/internal/testutil"
+	"github.com/nefeli/terraform-exec/tfexec/internal/testutil"
 )
 
 func TestUpgrade012(t *testing.T) {
