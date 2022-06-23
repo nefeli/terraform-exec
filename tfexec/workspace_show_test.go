@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hashicorp/terraform-exec/tfexec/internal/testutil"
+	"github.com/nefeli/terraform-exec/tfexec/internal/testutil"
 )
 
 func TestWorkspaceShowCmd_v012(t *testing.T) {

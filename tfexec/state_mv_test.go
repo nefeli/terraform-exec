@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/hashicorp/terraform-exec/tfexec/internal/testutil"
+	"github.com/nefeli/terraform-exec/tfexec/internal/testutil"
 )
 
 func TestStateMvCmd(t *testing.T) {
